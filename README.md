@@ -45,3 +45,25 @@ yarn build
 ```bash
 yarn start
 ```
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/eolme">
+        <img src="https://avatars.githubusercontent.com/eolme" width="80" height="80" alt=""/><br />
+        <sub><b>Anton Petrov</b></sub>
+      </a><br />
+      <span>Team Lead</span>
+    </td>
+    <td align="center">
+      <a href="https://github.com/alexugarin">
+        <img src="https://avatars.githubusercontent.com/alexugarin" width="80" height="80" alt=""/><br />
+        <sub><b>Alex Ugarin</b></sub>
+      </a><br />
+      <span>Full-stack</span>
+    </td>
+  </tr>
+ </table>
+ 
