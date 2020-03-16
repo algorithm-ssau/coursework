@@ -9,8 +9,16 @@ import {
   TransitionGroup,
   CSSTransition
 } from 'react-transition-group';
+import { createGlobalStyle } from 'styled-components/macro';
 import ScrollReset from './components/renderless/ScrollReset';
 import routes from './pages/routes';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #fff;
+    color: #595959;
+  }
+`;
 
 const RouterView = () => {
   const location = useLocation();
@@ -31,11 +39,14 @@ const RouterView = () => {
 };
 
 const App = () => (
-  <Router>
-    <Helmet />
-    <ScrollReset />
-    <RouterView />
-  </Router>
+  <>
+    <GlobalStyle />
+    <Router>
+      <Helmet />
+      <ScrollReset />
+      <RouterView />
+    </Router>
+  </>
 );
 
 export default App;
