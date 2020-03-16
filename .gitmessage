@@ -1,0 +1,13 @@
+[<part>] <subject>
+
+# --- COMMIT END ---
+# Example:
+# [COMMON] Implement automated commit messages
+#
+# (Max 50 char)
+#
+# Part name can be:
+#
+# ᛫ API  - api parts (python)
+# ᛫ APP  - app parts (js)
+# ᛫ COMMON - common parts (other)

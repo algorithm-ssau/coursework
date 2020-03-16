@@ -1,0 +1,118 @@
+{
+  "root": true,
+  "env": {
+    "shared-node-browser": true,
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "window": false,
+    "self": false,
+    "globalThis": false,
+    "global": false
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "es6": true,
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "problems",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:promise/recommended",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "plugins": [
+    "import",
+    "node",
+    "promise"
+  ],
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".mjs",
+        ".cjs",
+        ".jsx",
+        ".json",
+        ".node"
+      ]
+    }
+  },
+  "rules": {
+    "semi": 2,
+    "indent": [
+      2,
+      2,
+      {
+        "VariableDeclarator": "first",
+        "FunctionDeclaration": {
+          "parameters": "first"
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "ArrayExpression": 1,
+        "ObjectExpression": 1,
+        "SwitchCase": 1
+      }
+    ],
+    "array-bracket-spacing": [
+      2,
+      "never"
+    ],
+    "object-curly-spacing": [
+      2,
+      "always",
+      {
+        "objectsInObjects": false,
+        "arraysInObjects": false
+      }
+    ],
+    "computed-property-spacing": [
+      2,
+      "never"
+    ],
+    "space-in-parens": [
+      2,
+      "never"
+    ],
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-undef-init": 2,
+    "no-void": 2,
+    "no-undefined": 2,
+    "no-shadow-restricted-names": 2,
+    "no-console": 0,
+    "no-param-reassign": 0,
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "node/no-unsupported-features/es-syntax": 0,
+    "promise/always-return": 0
+  }
+}

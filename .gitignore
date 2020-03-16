@@ -1,0 +1,9 @@
+.vscode
+.cache
+.python
+node_modules
+*.log
+*.lock
+*.zip
+__pycache__
+build
