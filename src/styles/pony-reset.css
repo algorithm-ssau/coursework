@@ -1,0 +1,243 @@
+html {
+  cursor: default;
+  -moz-tab-size: 1;
+  tab-size: 1;
+  -webkit-highlight: none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-text-decorations-in-effect: none
+}
+
+:after,
+:before,
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+option,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+[role=button],
+[type=button],
+[type=reset],
+[type=submit],
+a,
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  text-decoration: none
+}
+
+[role=button],
+[type=button],
+[type=reset],
+[type=submit],
+a,
+button,
+select {
+  cursor: pointer
+}
+
+[role=button]:focus,
+[tabindex]:focus,
+a:focus,
+button:focus,
+input:focus,
+option:focus,
+select:focus,
+textarea:focus {
+  outline: 0
+}
+
+[role=button]::-moz-focus-inner,
+[tabindex]::-moz-focus-inner,
+a::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+option::-moz-focus-inner,
+select::-moz-focus-inner,
+textarea::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+:-moz-focusring {
+  outline: 0
+}
+
+button[disabled],
+input[disabled],
+option[disabled],
+select[disabled],
+textarea[disabled] {
+  cursor: default
+}
+
+body {
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+  -moz-user-focus: ignore;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -ms-touch-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+input::-ms-clear {
+  display: none
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button,
+input::-webkit-search-cancel-button,
+input::-webkit-search-decoration,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  display: none
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none
+}
+
+input:-moz-submit-invalid,
+textarea:-moz-submit-invalid {
+  box-shadow: none
+}
+
+input:-moz-ui-invalid,
+textarea:-moz-ui-invalid {
+  box-shadow: none
+}
+
+::-moz-selection {
+  text-shadow: none
+}
+
+::selection {
+  text-shadow: none
+}
