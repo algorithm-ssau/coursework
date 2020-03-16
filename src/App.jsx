@@ -18,6 +18,21 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fff;
     color: #595959;
   }
+
+  .page-enter {
+    opacity: 0;
+  }
+  .page-enter-active {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  .page-exit {
+    opacity: 1;
+  }
+  .page-exit-active {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
 `;
 
 const RouterView = () => {
@@ -27,7 +42,7 @@ const RouterView = () => {
     <TransitionGroup>
       <CSSTransition
         key={location.key}
-        classNames="fade"
+        classNames="page"
         timeout={300}
       >
         <Switch>
