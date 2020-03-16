@@ -3,8 +3,11 @@
     "target": "esnext",
     "module": "esnext",
     "experimentalDecorators": true,
-    "reactNamespace": "h",
+    "esModuleInterop": true,
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "reactNamespace": "h",
     "baseUrl": ".",
     "paths": {
       "~/*": [
