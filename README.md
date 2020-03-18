@@ -20,11 +20,6 @@ python -m ensurepip --default-pip
 pip install -r requirements.txt
 ```
 
-### Run
-```bash
-uvicorn app.main:app --reload
-``` 
-
 ## Full-stack parts
 ### Deps
 
@@ -41,7 +36,8 @@ yarn install
 yarn build
 ```
 
-### Run
+
+## Run
 ```bash
 yarn start
 ```

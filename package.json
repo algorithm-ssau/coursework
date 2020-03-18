@@ -8,12 +8,16 @@
   "main": "server/index.js",
   "module": "server/server.js",
   "scripts": {
-    "dev": "react-scripts start",
     "build": "react-scripts build",
-    "start": "node -r esm server/server.js",
-    "lint": "run-p --aggregate-output --continue-on-error lint:app lint:server",
-    "lint:app": "autopep8 -i -a -a -v -r ./app/**/*.py",
-    "lint:server": "eslint --debug --fix --ext .js,.jsx,.mjs ."
+    "dev": "run-p dev:app start:server",
+    "dev:app": "uvicorn app.main:APP --reload --port 8000",
+    "dev:server": "react-scripts start",
+    "start": "run-p start:*",
+    "start:app": "uvicorn app.main:APP --log-level error --port 8000",
+    "start:server": "node -r esm server/server.js",
+    "lint": "run-p --aggregate-output lint:*",
+    "lint:app": "autopep8 -i -a -a -a -r app",
+    "lint:server": "eslint --fix --ext .js,.jsx,.mjs ."
   },
   "husky": {
     "hooks": {
