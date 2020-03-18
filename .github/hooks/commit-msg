@@ -15,7 +15,7 @@ try {
     end = commit.length - 1;
   }
 
-  const rule = /^\[COMMON|APP|API\]\s[A-z]/g;
+  const rule = /^\[COMMON|APP|API\]\s[A-Z]/g;
   if (!(rule.test(commit.slice(0, end)))) {
     console.error('Validate commit message failed!');
     process.exit(1);
