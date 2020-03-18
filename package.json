@@ -22,7 +22,8 @@
   "husky": {
     "hooks": {
       "post-merge": "git config commit.template .gitmessage",
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint",
+      "commit-msg": "node .github/hooks/commit-msg"
     }
   },
   "dependencies": {

@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+try {
+  const param = process.env.HUSKY_GIT_PARAMS || process.env.GIT_PARAMS;
+  const cwd = process.cwd();
+  const file = path.resolve(cwd, param);
+
+  const commit = fs.readFileSync(file, { encoding: 'utf-8', flag: 'r' });
+  let end = commit.indexOf('\n');
+  if (end === -1) {
+    end = commit.length - 1;
+  }
+
+  const rule = /^\[COMMON|APP|API\]\s[A-z]/g;
+  if (!(rule.test(commit.slice(0, end)))) {
+    console.error('Validate commit message failed!');
+    process.exit(1);
+  }
+} catch (_) {}
