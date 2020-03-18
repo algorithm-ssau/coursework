@@ -9,7 +9,7 @@
   "module": "server/server.js",
   "scripts": {
     "build": "react-scripts build",
-    "dev": "run-p dev:app start:server",
+    "dev": "run-p dev:*",
     "dev:app": "uvicorn app.main:APP --reload --port 8000",
     "dev:server": "react-scripts start",
     "start": "run-p start:*",
