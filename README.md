@@ -64,6 +64,13 @@ yarn start
       </a><br />
       <span>Full-stack</span>
     </td>
+    <td align="center">
+      <a href="https://github.com/buyniy">
+        <img src="https://avatars.githubusercontent.com/buyniy" width="80" height="80" alt=""/><br />
+        <sub><b>Vadim Tarasov</b></sub>
+      </a><br />
+      <span>Full-stack</span>
+    </td>
   </tr>
  </table>
  
