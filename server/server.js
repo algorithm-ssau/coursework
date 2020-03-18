@@ -1,23 +1,16 @@
 import express from 'express';
 import compression from 'compression';
-import { createProxyMiddleware } from 'http-proxy-middleware';
 import path from 'path';
 import dotenv from 'dotenv';
+import proxy from '../src/setupProxy';
 
 dotenv.config();
 
 const root = path.resolve(__dirname, '..');
 const app = express();
-const api = {
-  target: `${process.env.API}`,
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api': '/'
-  }
-};
 
 app.use(compression());
-app.use(createProxyMiddleware('/api', api));
+proxy(app);
 app.use(express.static(path.join(root, 'build')));
 app.get('*', (req, res) => res.sendFile(path.join(root, 'build', 'index.html')));
 
