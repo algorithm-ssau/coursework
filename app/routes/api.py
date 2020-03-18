@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-router = APIRouter()
+ROUTER = APIRouter()
 
 
-@router.post("/")
+@ROUTER.post('/')
 async def api():
-    return ""
+    return ''
