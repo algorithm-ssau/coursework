@@ -22,6 +22,10 @@ const routes = [{
   path: '/',
   exact: true,
   component: withDynamicRoute(() => import('./Home'))
+}, {
+  path: '*',
+  exact: false,
+  component: withDynamicRoute(() => import('./NotFound'))
 }];
 
 const generateLazyRoutes = () => routes.map((route) => (
