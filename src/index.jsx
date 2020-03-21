@@ -4,4 +4,13 @@ import App from './App';
 
 import './styles/pony-reset.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+((init) => {
+  if (document.readyState !== 'loading') {
+    init();
+  } else {
+    document.addEventListener('DOMContentLoaded', init);
+  }
+})(() => {
+  const root = document.getElementById('root');
+  ReactDOM.render(<App />, root);
+});
