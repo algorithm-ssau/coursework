@@ -1,16 +1,45 @@
-# Coursework
+<h1>
+	<img
+    align="left"
+		width="40"
+		alt="Logo"
+		src="https://raw.githubusercontent.com/algorithm-ssau/coursework/master/public/logo.svg?sanitize=true">
+  <span>Sneaker Shop<span>
+</h1>
+
+![GitHub issues](https://img.shields.io/github/issues/algorithm-ssau/coursework?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/algorithm-ssau/coursework?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/algorithm-ssau/coursework?style=flat-square)
+![GitHub](https://img.shields.io/github/license/algorithm-ssau/coursework?color=blue&style=flat-square)
+    
+## 😀 Preview
+<table>
+  <tr>
+    <td>
+      <img
+        width="100%"
+        alt="Preview"
+        src="https://raw.githubusercontent.com/algorithm-ssau/coursework/master/public/social.png">
+     </td>
+   </tr>
+</table>
+
+## 🧰 Built with
 
 - python
 - mongodb
 - express
 - react
 
-## API parts
-### Deps
 
-1) install mongodb
-2) install python3
-3) run in shell:
+## 🚀 Installation and usage
+
+### ✅ API parts
+#### Steps
+
+1) Install mongodb
+2) Install python3
+3) Run in shell:
 
 ```bash
 python -m ensurepip --default-pip
@@ -20,29 +49,39 @@ python -m ensurepip --default-pip
 pip install -r requirements.txt
 ```
 
-## Full-stack parts
-### Deps
+### ✅ App parts
+#### Steps
 
-1) install nodejs w/o npm
-2) install yarn
-3) run in shell:
+1) Install nodejs
+2) Install yarn
+3) Run in shell:
 
 ```bash
 yarn install
 ```
 
-### Build
+#### Build
+To build the app for production run in shell:
+
 ```bash
 yarn build
 ```
 
-
-## Run
+### ✅ Run
 ```bash
 yarn start
 ```
 
-## Contributors
+## 🤝 How to Contribute
+
+1. Clone repo and create a new branch:
+```bash
+git checkout https://github.com/algorithm-ssau/coursework -b <name_for_new_branch>
+```
+2. Make changes and test
+3. Submit Pull Request with comprehensive description of changes
+
+## ❤️ Contributors
 
 <table>
   <tr>
@@ -68,5 +107,7 @@ yarn start
       <span>Full-stack</span>
     </td>
   </tr>
- </table>
- 
+</table>
+
+## 📘 License
+This project is released under the terms of the MIT license.
