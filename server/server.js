@@ -7,13 +7,14 @@ import proxy from '../src/setupProxy';
 dotenv.config();
 
 const root = path.resolve(__dirname, '..');
+const build = path.join(root, 'build');
 const app = express();
 
 app.use(compression());
 proxy(app);
 app.use('/storage', express.static(path.join(root, 'server', 'storage')));
-app.use(express.static(path.join(root, 'build')));
-app.get('*', (req, res) => res.sendFile(path.join(root, 'build', 'index.html')));
+app.use(express.static(build));
+app.get('*', (req, res) => res.sendFile(path.join(build, 'index.html')));
 
 app.listen(process.env.PORT, (error) => {
   if (!error) {
