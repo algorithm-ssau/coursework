@@ -2,7 +2,6 @@
 
 import React from 'react';
 import loadable from '@loadable/component';
-import { PrerenderedComponent } from 'react-prerendered-component';
 import { Route } from 'react-router-dom';
 import Loading from '../components/Loading';
 
@@ -12,9 +11,7 @@ const withDynamicRoute = (provide) => {
   });
 
   return React.memo((props) => (
-    <PrerenderedComponent live={LazyRoute.load()}>
-      <LazyRoute {...props} />
-    </PrerenderedComponent>
+    <LazyRoute {...props} />
   ));
 };
 
