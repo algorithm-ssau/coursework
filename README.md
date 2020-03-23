@@ -24,6 +24,8 @@
    </tr>
 </table>
 
+[Figma](https://www.figma.com/file/kpjyvn7pzS4rLxWeAfzQjQ/Coursework-Sneaker-Shop)
+
 ## 🧰 Built with
 
 - python
