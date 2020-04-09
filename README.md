@@ -99,14 +99,14 @@ git checkout https://github.com/algorithm-ssau/coursework -b <name_for_new_branc
         <img src="https://avatars.githubusercontent.com/alexugarin" width="80" height="80" alt=""/><br />
         <sub><b>Alex Ugarin</b></sub>
       </a><br />
-      <span>Full-stack</span>
+      <span>Member</span>
     </td>
     <td align="center">
       <a href="https://github.com/buyniy">
         <img src="https://avatars.githubusercontent.com/buyniy" width="80" height="80" alt=""/><br />
         <sub><b>Vadim Tarasov</b></sub>
       </a><br />
-      <span>Full-stack</span>
+      <span>Member</span>
     </td>
   </tr>
 </table>
