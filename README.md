@@ -11,7 +11,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/algorithm-ssau/coursework?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/algorithm-ssau/coursework?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/algorithm-ssau/coursework?color=blue&style=flat-square)
-    
+
 ## 😀 Preview
 <table>
   <tr>
@@ -32,7 +32,6 @@
 - mongodb
 - express
 - react
-
 
 ## 🚀 Installation and usage
 
