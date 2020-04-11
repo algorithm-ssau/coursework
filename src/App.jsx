@@ -13,10 +13,12 @@ import { createGlobalStyle } from 'styled-components/macro';
 import ScrollReset from './components/renderless/ScrollReset';
 import routes from './pages/routes';
 
+import colors from './styles/colors';
+
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #fff;
-    color: #595959;
+    background-color: ${colors.white};
+    color: ${colors.black};
   }
 
   .page-enter {
