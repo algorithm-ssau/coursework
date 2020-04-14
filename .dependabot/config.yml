@@ -1,0 +1,40 @@
+version: 1
+update_configs:
+  # App parts
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    target_branch: "master"
+    default_assignees:
+      - "eolme"
+    default_reviewers:
+      - "eolme"
+    default_labels:
+      - "APP"
+      - "DEPS"
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+      - match:
+          dependency_type: "production"
+          update_type: "semver:patch"
+  # API parts
+  - package_manager: "python"
+    directory: "/"
+    update_schedule: "daily"
+    target_branch: "master"
+    default_assignees:
+      - "eolme"
+    default_reviewers:
+      - "eolme"
+    default_labels:
+      - "API"
+      - "DEPS"
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+      - match:
+          dependency_type: "production"
+          update_type: "semver:patch"
