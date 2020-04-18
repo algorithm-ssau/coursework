@@ -12,17 +12,19 @@ update_configs:
     default_labels:
       - "APP"
       - "DEPS"
+    allowed_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "security"
     automerged_updates:
       - match:
-          dependency_type: "development"
-          update_type: "all"
-      - match:
-          dependency_type: "production"
-          update_type: "semver:patch"
+          dependency_type: "all"
+          update_type: "semver:minor"
+    version_requirement_updates: "off"
   # API parts
   - package_manager: "python"
     directory: "/"
-    update_schedule: "daily"
+    update_schedule: "live"
     target_branch: "master"
     default_assignees:
       - "eolme"
@@ -31,10 +33,11 @@ update_configs:
     default_labels:
       - "API"
       - "DEPS"
+    allowed_updates:
+      - match:
+          dependency_type: "all"
+          update_type: "security"
     automerged_updates:
       - match:
-          dependency_type: "development"
-          update_type: "all"
-      - match:
-          dependency_type: "production"
-          update_type: "semver:patch"
+          dependency_type: "all"
+          update_type: "semver:minor"
