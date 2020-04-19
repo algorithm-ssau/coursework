@@ -24,6 +24,49 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.black};
   }
 
+  html,
+  body,
+  #root {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    scrollbar-size: thin;
+    scrollbar-color: ${colors.peach} ${colors.white};
+
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+      background: ${colors.white};
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-button {
+      width: 0;
+      height: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${colors.peach};
+
+      &:hover {
+        background: ${colors.sand};
+      }
+
+      &:vertical {
+        max-height: 512px;
+        min-height: 48px;
+      }
+
+      &:horizontal {
+        max-width: 512px;
+        min-width: 48px;
+      }
+    }
+  }
+
   .page-enter,
   .page-appear {
     opacity: 0;
