@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 import {
   BrowserRouter as Router,
@@ -6,11 +6,14 @@ import {
   useLocation
 } from 'react-router-dom';
 import {
-  TransitionGroup,
-  CSSTransition
+  CSSTransition,
+  SwitchTransition
 } from 'react-transition-group';
+
 import { createGlobalStyle } from 'styled-components/macro';
 import ScrollReset from './components/renderless/ScrollReset';
+
+import events from './utils/events';
 import routes from './pages/routes';
 
 import colors from './styles/colors';
@@ -21,37 +24,46 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.black};
   }
 
-  .page-enter {
+  .page-enter,
+  .page-appear {
     opacity: 0;
   }
-  .page-enter-active {
+  .page-exit,
+  .page-enter-active,
+  .page-enter-done,
+  .page-appear-active,
+  .page-appear-done {
     opacity: 1;
-    transition: opacity 0.3s ease-in;
   }
-  .page-exit {
-    opacity: 1;
+  .page-exit-active,
+  .page-exit-done {
+    opacity: 0;
   }
+  .page-appear-active,
+  .page-enter-active,
   .page-exit-active {
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   }
 `;
 
 const RouterView = () => {
   const location = useLocation();
+  const endListener = useCallback(() => events.transitionEndHandler.bind(null, 300), []);
 
   return (
-    <TransitionGroup>
+    <SwitchTransition>
       <CSSTransition
-        key={location.key}
+        key={location.pathname}
         classNames="page"
-        timeout={300}
+        timeout={600}
+        addEndListener={endListener}
+        appear
       >
-        <Switch>
+        <Switch location={location}>
           {routes}
         </Switch>
       </CSSTransition>
-    </TransitionGroup>
+    </SwitchTransition>
   );
 };
 
