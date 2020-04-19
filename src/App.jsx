@@ -18,6 +18,9 @@ import routes from './pages/routes';
 
 import colors from './styles/colors';
 
+import Header from './components/structure/header/Header';
+import Footer from './components/structure/footer/Footer';
+
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${colors.white};
@@ -116,7 +119,9 @@ const App = () => (
     <Router>
       <Helmet />
       <ScrollReset />
+      <Header />
       <RouterView />
+      <Footer />
     </Router>
   </>
 );
