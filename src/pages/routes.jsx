@@ -7,6 +7,7 @@ import Loading from '../components/Loading';
 
 const withDynamicRoute = (provide) => {
   const LazyRoute = loadable(provide, {
+    cacheKey: (props) => props.location.pathname,
     fallback: (<Loading />)
   });
 
