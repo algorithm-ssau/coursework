@@ -19,11 +19,11 @@ const withDynamicRoute = (provide) => {
 const routes = [{
   path: '/',
   exact: true,
-  component: withDynamicRoute(() => import('./Home'))
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './Home'))
 }, {
   path: '*',
   exact: false,
-  component: withDynamicRoute(() => import('./NotFound'))
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './NotFound'))
 }];
 
 const generateLazyRoutes = () => routes.map((route) => (
