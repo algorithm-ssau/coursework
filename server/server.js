@@ -12,7 +12,6 @@ const app = express();
 
 app.use(compression());
 proxy(app);
-app.use('/storage', express.static(path.join(root, 'server', 'storage')));
 app.use(express.static(build));
 app.get('*', (req, res) => res.sendFile(path.join(build, 'index.html')));
 
