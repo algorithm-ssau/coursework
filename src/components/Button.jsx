@@ -12,6 +12,7 @@ const Button = styled.button`
   flex-shrink: 0;
 
   padding: 20px;
+  box-sizing: border-box;
 
   color: ${colors.white};
   background-color: ${colors.black};
