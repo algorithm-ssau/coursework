@@ -1,24 +1,23 @@
-import styled, { css } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 
-import colors from '../styles/colors';
+import colors from '../../../styles/colors';
+import typography from '../../../styles/typography';
 
-const HeaderButton = styled.button`
+const HeaderNav = styled.button`
+  ${typography.title}
+
   display: block;
   position: relative;
 
   min-width: 0;
   flex-shrink: 0;
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
-
   white-space: nowrap;
 
   padding: 20px;
 
   color: ${colors.black};
-  background-color: ${colors.white};
+  background-color: transparent;
 
   &:after {
     content: '';
@@ -37,11 +36,11 @@ const HeaderButton = styled.button`
     transition: background-color 0.3s ease;
   }
 
-  ${(props) => props.active && css`
+  &.active {
     &:after {
       background-color: ${colors.sand};
     }
-  `}
+  }
 
   &:hover {
     &:after {
@@ -50,4 +49,4 @@ const HeaderButton = styled.button`
   }
 `;
 
-export default HeaderButton;
+export default HeaderNav;

@@ -1,18 +1,18 @@
 import styled, { css } from 'styled-components/macro';
 
 import colors from '../styles/colors';
+import typography from '../styles/typography';
 
 const Button = styled.button`
+  ${typography.title}
+
   display: inline-block;
   max-width: 100%;
 
   flex-shrink: 0;
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
-
   padding: 20px;
+  box-sizing: border-box;
 
   color: ${colors.white};
   background-color: ${colors.black};

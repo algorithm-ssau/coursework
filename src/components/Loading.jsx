@@ -1,10 +1,25 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components/macro';
 
+import colors from '../styles/colors';
+
+const LoadingMask = styled.div`
+  position: fixed;
+
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1010;
+
+  background-color: ${colors.white};
+`;
+
 const LoadingContainer = styled.div`
   width: 40px;
   height: 40px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform-origin: 50%;
@@ -78,12 +93,14 @@ const LoadingCube = styled.div`
 `;
 
 const Loading = () => (
-  <LoadingContainer>
-    <LoadingCube />
-    <LoadingCube />
-    <LoadingCube />
-    <LoadingCube />
-  </LoadingContainer>
+  <LoadingMask>
+    <LoadingContainer>
+      <LoadingCube />
+      <LoadingCube />
+      <LoadingCube />
+      <LoadingCube />
+    </LoadingContainer>
+  </LoadingMask>
 );
 
 export default Loading;
