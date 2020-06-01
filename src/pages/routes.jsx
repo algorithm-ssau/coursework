@@ -21,6 +21,22 @@ const routes = [{
   exact: true,
   component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './Home'))
 }, {
+  path: '/sale',
+  exact: true,
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './Sale'))
+}, {
+  path: '/explore',
+  exact: true,
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './Explore'))
+}, {
+  path: '/explore/:id',
+  exact: true,
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './Product'))
+}, {
+  path: '/about',
+  exact: true,
+  component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './About'))
+}, {
   path: '*',
   exact: false,
   component: withDynamicRoute(() => import(/* webpackPrefetch: true */ './NotFound'))
