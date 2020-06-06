@@ -108,6 +108,7 @@
     "no-shadow-restricted-names": 2,
     "no-console": 0,
     "no-param-reassign": 0,
+    "no-bitwise": 0,
     "comma-dangle": [
       2,
       "never"
