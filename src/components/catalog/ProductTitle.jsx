@@ -5,9 +5,18 @@ import typography from '../../styles/typography';
 const ProductTitle = styled.strong`
   ${typography.title}
 
-  display: block;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
 
-  height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  height: 48px;
   margin-bottom: 20px;
 `;
 
