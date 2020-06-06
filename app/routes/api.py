@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from ..mock.products import MOCK_SALE, MOCK_EXPLORE, MOCK_TAGS, MOCK_DESCRIPTION
+from ..mock.products import MOCK_SALE, MOCK_EXPLORE
 
 ROUTER = APIRouter()
 
@@ -27,14 +27,5 @@ async def api_explore():
 
 @ROUTER.get('/product/{product_id}')
 async def api_product(product_id: int):
-    product = next(filter(lambda product: product.get("id") ==
-                          product_id, MOCK_EXPLORE), None)
-    if product is None:
-        return None
-    response = dict()
-    response.update(product)
-    response.update({
-        "tags": MOCK_TAGS,
-        "description": MOCK_DESCRIPTION
-    })
-    return response
+    return next(filter(lambda product: product.get("id") ==
+                       product_id, MOCK_EXPLORE), None)
