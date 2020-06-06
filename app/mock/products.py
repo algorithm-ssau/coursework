@@ -110,7 +110,7 @@ MOCK_SALE = [{
 
 MOCK_EXPLORE = [{
     "id": 1,
-   "title": "Demix Magus M",
+    "title": "Demix Magus M",
     "description" : "Lightweight and flexible Demix Magus training sneakers. Special grooves on the sole, located in places of the anatomical fold of the foot, allow you to move naturally. Ultra-lightweight knitwear with a special weave provides air circulation and also effectively removes excess heat and moisture. EVA soles and modern upper materials guarantee a low weight model.",
     "tags": ["Fashion","Sneakers","Shoes"],
     "price": {
@@ -128,7 +128,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 3,
-   "title": "Skechers Go Run 600",
+    "title": "Skechers Go Run 600",
     "description" : "Skechers Go Run 600 Divert Running Shoes The model is designed for neutral and hypopronization. COMFORT Sole made of lightweight 5GEN material quickly restores shape after deformation, providing comfort and additional cushioning while running. SHOCK ABSORPTION The special GOGA Run insole has good cushioning properties. ANTIBACTERIAL IMPREGNATION The antibacterial properties of the insole protect against unpleasant odors.",
     "tags": ["Men", "Running", "Leather"],
     "price": {
@@ -137,7 +137,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 4,
-   "title": "Skechers Dynamight 2.0-Rayhill",
+    "title": "Skechers Dynamight 2.0-Rayhill",
     "description" : "Comfortable and soft Dynimate 2 sneakers from Skechers are the optimal combination of comfort and original design. COMFORT A special Memory Foam insole made of soft foam follows the contour of the foot, providing additional comfort, and quickly regains shape after deformation. VENTILATION The upper of the shoe is made of well-ventilated textile material.",
     "tags": ["Running", "Leather", "Summer"],
     "price": {
@@ -155,7 +155,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 6,
-   "title": "Puma Vista",
+    "title": "Puma Vista",
     "description" : "Vista Mid WTR sneakers inspired by the legendary 70s collection. The warmed model in sports style is irreplaceable in cold weather. HEAT STORAGE Fur lining perfectly protects from cold. COMFORT Anatomical insole SoftFoam + provides maximum comfort. NATURAL MATERIALS Combination of genuine leather and suede for a spectacular look. ANTIBACTERIAL IMPREGNATION Insole with antibacterial impregnation for freshness of the legs.",
     "tags": ["Winter", "Men", "Running"],
     "price": {
@@ -173,7 +173,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 8,
-   "title": "Fila Ray",
+    "title": "Fila Ray",
     "description" : "Light and comfortable Fila Ray sneakers are made in a modern sports style with retro and classic elements. SHOCK ABSORBER The EVA midsole absorbs shock when walking. WEAR RESISTANCE Sole material has high wear-resistant properties. EASY EVA outsole ensures low shoe weight.",
     "tags": ["Winter", "Autumn", "Men"],
     "price": {
@@ -200,7 +200,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 11,
-   "title": "Nike Zoom Zero",
+    "title": "Nike Zoom Zero",
     "description" : "The modified Nike Court Air Zoom Zero tennis sneakers are a great choice for games and workouts. SHOCK ABSORBTION The full-length insert of the Nike Zoom Air sneakers provides excellent cushioning. VENTILATION The one-piece upper provides air exchange and a comfortable fit. RELIABLE FIXING A well thought-out lacing system for a good fit.",
     "tags": ["Summer","Men","Fashion"],
     "price": {
@@ -209,7 +209,7 @@ MOCK_EXPLORE = [{
     }
 }, {
     "id": 12,
-     "title": "Puma Wired",
+    "title": "Puma Wired",
     "description" : "Comfortable Puma sneakers for a sporty outing. COMFORT SoftFoam + foam insole for comfort and extra cushioning. VENTILATION The top is made of mesh breathable material. SHOCK-UP IMEVA wavy midsole absorbs shock loads.",
     "tags": ["Fashion", "Men", "Autumn"],
     "price": {
